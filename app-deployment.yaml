@@ -21,25 +21,25 @@ spec:
             - name: DB_HOST   # Setting Database host address from configMap
               valueFrom :
                 configMapKeyRef :
-                  name : db-config
+                  name : lcwd-config
                   key :  host
 
             - name: DB_NAME  # Setting Database name from configMap
               valueFrom :
                 configMapKeyRef :
-                  name : db-config
+                  name : lcwd-config
                   key :  dbName
 
             - name: DB_USERNAME  # Setting Database username from Secret
               valueFrom :
                 secretKeyRef :
-                  name : mysql-secrets
+                  name : lcwd-secrets
                   key :  username
 
             - name: DB_PASSWORD # Setting Database password from Secret
               valueFrom :
                 secretKeyRef :
-                  name : mysql-secrets
+                  name : lcwd-secrets
                   key :  password
 
 ---
