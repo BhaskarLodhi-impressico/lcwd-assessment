@@ -22,7 +22,6 @@ public class MyStoreApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		
 		try {
 			Role role1 = Role.builder().roleId("admin").roleName("ROLE_ADMIN").build();
 			Role role2 = Role.builder().roleId("normal").roleName("ROLE_NORMAL").build();

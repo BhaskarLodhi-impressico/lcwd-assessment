@@ -36,9 +36,4 @@ public class CartController {
         return ResponseEntity.ok(cart);
 
     }
-
-    // TODO: remove item from cart
-
-    // TODO: Clear cart
-
 }
