@@ -11,15 +11,7 @@ spring:
     generate-ddl: true
     show-sql: true
     hibernate:
-      ddl-auto: update   
-      
-management:
-  endpoints:
-    web:
-      exposure:
-        include: beans, loggers, health
-    health:
-    show-details: always  
+      ddl-auto: update    
     
 user:
   normal:
