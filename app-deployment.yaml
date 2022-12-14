@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: lcwd-assessment
-          image: bhaskar9997/lcwd-assessment:1.0
+          image: bhaskar9997/lcwd-assessment
           ports:
             - containerPort: 8080
           env:   # Setting Enviornmental Variables
